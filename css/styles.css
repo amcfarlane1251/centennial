@@ -1,0 +1,308 @@
+html{
+	font-size:14px;
+	font-family: 'Vollkorn', sans-serif;
+}
+#wrapper{
+	width:1275px;
+	margin:0 auto;
+}
+
+h1, h2, h3, h4, p{
+	font-family: 'Vollkorn', sans-serif;	
+}
+h1{
+	font-size:5.063rem;
+	margin:1rem 0;
+}
+h2{
+	font-size:3.375rem;
+	margin:.667rem 0;
+}
+h3{
+	font-size:2.25rem;
+}
+h4{
+	font-size:1.25rem;
+	font-weight:bold;
+}
+p{
+	font-size:1.2rem;
+	line-height:1.5;
+}
+li{
+	font-size: 1.25rem;
+}
+
+.hero-heading{
+	position:absolute;
+	top:50%;
+	left:20%;
+	color:#fff;
+}
+/*
+ * Header
+ ******************/
+header.col-md-12{
+	background:#33531C;
+	margin:0 auto;
+	float:none;
+	padding:0;
+}
+header .navbar-default{
+	margin:0;
+	z-index:999;
+}
+.navbar{
+	min-height: 0;
+	background:#FFF;
+	border:none;
+	border-radius:0;
+}
+#navbar .navbar-nav{
+	width:70%;
+	margin:0 auto;
+}
+#navbar .navbar-nav li{
+	width:14.28%;
+	margin:0;
+	font-size:1rem;
+}
+#navbar .navbar-nav > li > a{
+	background:#33531C;
+	padding:.667rem 1rem;
+	color:#fff;
+	font-family: 'Vollkorn', sans-serif;
+	letter-spacing: .2px;
+}
+#navbar .navbar-nav > li > a:hover{
+	background:#629F36;
+	color:#111;
+}
+/*
+ * Slider
+ *************/
+ .flexslider{
+ 	border:none;
+ }
+ .flexslider .slides > li{
+ 	overflow: hidden;
+ }
+ .flexslider #slider .slides li{
+ 	height:350px !important;
+	width:auto !important;
+	margin:0 auto;
+}
+
+#slider{
+	margin-bottom:.667rem;
+}
+#slider .slides li > img{
+	height:350px;
+	width:auto;
+	margin:0 auto;
+}
+#gallery #slider .slides li > img{
+	height:auto;
+	max-height:500px;
+}
+
+#carousel li{
+	width:auto !important;
+	margin:0 3px;
+}
+#carousel li > img{
+	height:50px;
+	width:auto;
+}
+
+/*
+ * Block Elements
+ ****************/
+ #wrapper > section:nth-of-type(2), #wrapper .content > section:nth-of-type(2){
+ 	margin-top:3.375rem;
+ }
+.content .event-heading.first h3{
+ 	margin-top:0;
+ }
+
+article{
+ 	margin:2.25rem 0;
+}
+
+ul{
+	font-family:'Vollkorn';
+}
+
+.hero{
+	padding:0;
+}
+
+.right-col img{
+	margin:3.375rem 0;
+}
+
+#info{
+	margin-top:2.25rem;
+ 	background:#629F36;
+ 	border:2px solid #33531c;
+ 	padding:1rem 1.5rem;
+}
+
+.row{
+	margin:3.375rem 0;
+}
+
+#info h4{
+	margin:0;
+}
+#info ul{
+	margin:1.5rem 0;
+}
+#info a{
+	color:#333;
+	text-decoration: underline;
+}
+/*
+ * Links and Buttons
+ ****************/
+.button{
+	position:relative;
+	background:#629F36;
+	display:inline-block;
+	color:#fff;
+	border-bottom:2px solid #33531C;
+	padding:1rem 2.25rem;
+	-webkit-box-shadow: inset 0 -2px #33531C;
+  	box-shadow: inset 0 -2px #33531C;
+}
+.button:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.button:active{
+	top: 1px;
+  	outline: none;
+  	-webkit-box-shadow: none;
+  	box-shadow: none;
+}
+
+h4 a{
+	text-decoration: underline;
+	font-weight:normal;
+}
+
+/*
+ * Events
+ **********/
+.events .content{
+	display:none;
+}
+
+.events .content.active{
+	display:block;
+}
+
+.events .event-heading h3{
+	font-size:1.875rem;
+	margin:2.5rem 0 0;
+}
+.events .content h3.background-highlight{
+	background:#7E9F66;
+	display:inline-block;
+	margin:0 auto;
+	padding:.296rem;
+}
+
+.events p{
+	text-indent:3.375rem;
+}
+.events p.date{
+	text-indent:0;
+}
+
+/*
+ * Events
+ **********/
+.event{
+	margin:2.25rem 0;
+}
+.event h4{
+	margin-bottom:0;
+}
+
+/*
+ * Helper Classes
+ ****************/
+ .center-block{
+ 	display:block;
+ 	margin:0 auto;
+ 	float:none;
+ }
+ .center{
+ 	text-align: center;
+ }
+ .left{
+ 	text-align:left;
+ }
+ .img-responsive{
+ 	margin:0 auto;
+ 	width:100%;
+ }
+ .normal-weight{
+ 	font-weight:normal;
+ }
+ .logo-thumb{
+ 	position:absolute;
+ 	top:0;
+ 	left:-96px;
+ }
+ .social-media{
+ 	position:absolute;
+ 	top:0;
+ 	right:-96px;
+ }
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1275px) {
+	#wrapper{
+		width:100%;
+	}
+}
+
+@media (max-width: 1100px) {
+	html{
+		font-size:13px;
+	}
+}
+
+@media (max-width: 1030px) {
+	html{
+		font-size:12px;
+	}
+	#navbar .navbar-nav{
+		width:650px;
+	}
+}
+
+@media (max-width: 991px){
+	.logo-thumb{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 414px) {
+	#gallery #slider .slides li > img{
+	max-height:300px;
+}
+}
