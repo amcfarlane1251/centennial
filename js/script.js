@@ -4,22 +4,51 @@ $(document).ready(function(){
 	  $('#carousel').flexslider({
 	    animation: "slide",
 	    controlNav: false,
-	    animationLoop: false,
 	    slideshow: false,
 	    itemMargin: 5,
-	    itemWidth: 100,
-	    asNavFor: '#slider'
+		itemWidth: 85,
+	    initDelay:0,
+	    asNavFor: '#slider',
+	    prevText: '',
+	    nextText: '',
 	  });
 
 	  $('#slider').flexslider({
 	    animation: "slide",
 	    controlNav: false,
 	    animationLoop: true,
-	    slideshow: false,
-	    sync: "#carousel"
+	    slideshow: true,
+	    slideshowSpeed:4000,
+	    sync: "#carousel",
+	    prevText: '',
+	    nextText: '',
+	    after: function(slider){ 
+	        slider.pause(); 
+	        slider.play(); 
+		}
 	  });
 
-	  $('.event-heading a').click(function(e){
+	  $('.variable-width').slick({
+		  infinite: true,
+		  autoplay:true,
+		  focusOnSelect:true,
+		  speed: 400,
+		  slidesToShow: 1,
+		  asNavFor: '.slider-nav',
+		  centerMode: true,
+		  variableWidth: true,
+		  pauseOnHover: false
+	  });
+
+	  $('.slider-nav').slick({
+		  slidesToShow: 9,
+		  slidesToScroll: 1,
+		  asNavFor: '.variable-width',
+		  centerMode: true,
+		  focusOnSelect: true
+	  });
+
+	  $('.event-heading a:first-child').click(function(e){
 	  	var activeDiv = $('.content.active');
 	  	var contentDiv = $(this).attr('href');
 

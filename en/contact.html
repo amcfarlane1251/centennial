@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Borden Centennial</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,14 @@
     <![endif]-->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1692931797606866";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrapper">
       <header class="col-md-12">
         <nav class="navbar navbar-default">
@@ -37,25 +45,25 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li>
-                <a href="home.html">Home</a>
+                <a href="home.html"><span>Home</span></a>
               </li>
               <li>
-                <a href="history.html">History</a>
+                <a href="history.html"><span>History</span></a>
               </li>
               <li>
-                <a href="events.html">Events</a>
+                <a href="events.html"><span>Events</span></a>
               </li>
               <li>
-                <a href="sponsorship.html">Sponsorship</a>
+                <a href="sponsorship.html"><span>Sponsorship</span></a>
               </li>
               <li>
-                <a href="merchandise.html">Merchandise</a>
+                <a href="merchandise.html"><span>Merchandise</span></a>
               </li>
               <li>
-                <a href="contact.html">Contacts</a>
+                <a href="contact.html"><span>Contacts</span></a>
               </li>
               <li>
-                <a href="../fr/home.html">Français</a>
+                <a href="../fr/home.html"><span>Français</span></a>
               </li>
             </ul>
           </div>
@@ -69,9 +77,23 @@
 
       <section class="col-md-10 center-block center clearfix">
         <img src="../images/logo-thumb.png" class="logo-thumb"/>
-        <div class="col-md-7 col-md-offset-1 left">
-        <p>The centennial logo is Copyright © 2015 Her Majesty the Queen in Right of Canada as represented by the Minister of National Defence.  All rights reserved.</p>
-        <p>Borden Centennial merchandise will be available for on-line and in-store purchasing soon!</p>
+        <div class="fb-share-button" data-href="http://100yearsoffreedom.ca" data-layout="button_count"></div>
+        <div class="col-md-9 center-block center">
+          <h4 class="contact">For Centennial Coordinator, contact Rick Kurtzer at:</h4>
+          <h4 class="contact"><a href="mailto:coord@100yearsoffreedom.ca">coord@100yearsoffreedom.ca</a></h4>
+          <img src="../images/spacer.jpg"/>
+
+          <h4 class="contact">For Sponsorship information and opportunities, contact:</h4>
+          <h4 class="contact"><a href="mailto:sponsorship@100yearsoffreedom.ca">sponsorship@100yearsoffreedom.ca</a></h4>
+          <img src="../images/spacer.jpg"/>
+
+          <h4 class="contact">For Media inquiries, contact:</h4>
+          <h4 class="contact"><a href="mailto:media@100yearsoffreedom.ca">media@100yearsoffreedom.ca</a></h4>
+          <img src="../images/spacer.jpg"/>
+
+          <h4 class="contact">For Event inquiries, contact:</h4>
+          <h4 class="contact"><a href="mailto:events@100yearsoffreedom.ca">events@100yearsoffreedom.ca</a></h4>
+          <img src="../images/spacer.jpg"/>
         </div>
       </section>
     </div>
