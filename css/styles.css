@@ -198,7 +198,11 @@ ul{
 }
 
 .right-col img{
-	margin:3.375rem 0;
+	margin:2.25rem 0;
+}
+.video-container{
+	width:100%;
+	min-height:320px;
 }
 
 #info{
@@ -363,7 +367,7 @@ p a{
  	width:auto !important;
  }
 
- iframe{
+ iframe.tickets-frame{
  	position:absolute;
  	top:0;
  	left:20px;
